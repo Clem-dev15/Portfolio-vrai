@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Veille technologique — Clément OLIVIER</title>
+  <meta name="description" content="Veille technologique BTS SIO SLAM : bonnes pratiques du développement web (responsive, accessibilité, performance) — résumé mensuel." />
+  <link rel="preload" href="assets/css/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="topbar" role="banner">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html#accueil" aria-label="Retour en haut">
+        <span class="brand__mark" aria-hidden="true">◆</span>
+        <span class="brand__text">Portfolio <span class="muted">BTS SIO</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+          <span class="sr-only">Ouvrir le menu</span>
+          <span class="burger" aria-hidden="true"></span>
+        </button>
+        <div id="navLinks" class="nav__links">
+          <a href="index.html#projets">Projets</a>
+          <a href="index.html#competences">Compétences</a>
+          <a href="veille.html">Veille</a>
+          <a href="index.html#contact">Contact</a>
+          <a class="btn btn--ghost" href="assets/docs/cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="Changer de thème">🌗</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  
+  <main id="contenu">
+    <section class="hero" style="padding: 70px 0 40px;">
+      <div class="container">
+        <p class="pill reveal">Veille technologique</p>
+        <h1 class="reveal">Développement Web : bonnes pratiques</h1>
+        <p class="lead reveal">
+          Responsive, accessibilité, performance — un résumé mensuel (mars 2025 → janvier 2026).
+        </p>
+        <div class="hero__cta reveal">
+          <a class="btn" href="index.html#projets">Voir les projets</a>
+          <a class="btn btn--ghost" href="index.html#contact">Contact</a>
+        </div>
+      </div>
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+<!-- VEILLE -->
+    <section id="veille" class="section section--alt">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <h2>Veille technologique</h2>
+            <p class="muted">
+              Sujet : <strong>Développement Web : bonnes pratiques (responsive, accessibilité, performance)</strong> — résumé mensuel.
+            </p>
+          </div>
+        </div>
+
+        <div class="veil">
+          <div class="veil__sidebar reveal">
+            <div class="card">
+              <h3>Pourquoi ce sujet ?</h3>
+              <p>J’ai choisi ce sujet car je m’intéresse aux nouveautés autour du développement web : pour ma culture générale, mais aussi pour renforcer mes compétences, car j’aime apprendre de nouvelles choses régulièrement.</p>
+              <p class="muted small">
+                Les liens de sources sont listés dans chaque entrée.
+              </p>
+            </div>
+          </div>
+
+          <div class="veil__content reveal">
+                                          <div class="timeline" id="veilleTimeline" aria-label="Chronologie de veille">
+            <details class="entry">
+              <summary>
+                <div class="entry__left">
+                  <span class="entry__date">mars 2025</span>
+                  <span class="entry__title">Responsive : partir du mobile (mobile-first)</span>
+                </div>
+                <div class="entry__right">
+                  <span>Voir</span>
+                  <span class="chev" aria-hidden="true">⌄</span>
+                </div>
+              </summary>
+              <div class="entry__body">
+                <p>Objectif : avoir un site propre sur téléphone avant d’ajouter la version desktop. Ça évite les mises en page “cassées”.</p>
+                <ul class="entry__bullets">
+                  <li>Utiliser des unités fluides (%, rem) et des breakpoints simples.</li>
+                  <li>Tester sur 2 tailles : mobile + desktop (puis ajuster).</li>
+                  <li>Éviter les largeurs fixes inutiles.</li>
+                </ul>
+                <div class="sources">
+                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+                  <ul class="entry__bullets">
+                  <li><a href="https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank" rel="noopener">MDN — Responsive design</a></li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+            <details class="entry">
+              <summary>
+                <div class="entry__left">
+                  <span class="entry__date">avril 2025</span>
+                  <span class="entry__title">Flexbox & Grid : choisir le bon outil</span>
+                </div>
+                <div class="entry__right">
+                  <span>Voir</span>
+                  <span class="chev" aria-hidden="true">⌄</span>
+                </div>
+              </summary>
+              <div class="entry__body">
+                <p>Flexbox pour aligner “en ligne” (menus, cartes), Grid pour structurer une page (sections, colonnes).</p>
+                <ul class="entry__bullets">
+                  <li>Flexbox : parfait pour une barre de navigation.</li>
+                  <li>Grid : idéal pour une grille de projets.</li>
+                  <li>Astuce : garder des règles simples et lisibles.</li>
+                </ul>
+                <div class="sources">
+                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+                  <ul class="entry__bullets">
+                  <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_flexible_box_layout" target="_blank" rel="noopener">MDN — Flexbox</a></li>
+                  <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_grid_layout" target="_blank" rel="noopener">MDN — Grid</a></li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+            <details class="entry">
+              <summary>
+                <div class="entry__left">
+                  <span class="entry__date">mai 2025</span>
+                  <span class="entry__title">Accessibilité : contrastes, titres, navigation clavier</span>
+                </div>
+                <div class="entry__right">
+                  <span>Voir</span>
+                  <span class="chev" aria-hidden="true">⌄</span>
+                </div>
+              </summary>
+              <div class="entry__body">
+                <p>Un site doit être utilisable par tous : lisible, navigable au clavier et cohérent (titres, labels).</p>
+                <ul class="entry__bullets">
+                  <li>Vérifier le contraste texte/fond.</li>
+                  <li>Structure : h1 → h2 → h3 (pas de saut).</li>
+                  <li>Tester la navigation avec Tab / Entrée.</li>
+                </ul>
+                <div class="sources">
+                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+                  <ul class="entry__bullets">
+                  <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener">W3C — WAI (Accessibility)</a></li>
+                  <li><a href="https://developer.mozilla.org/fr/docs/Web/Accessibility" target="_blank" rel="noopener">MDN — Accessibilité</a></li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+            <details class="entry">
+              <summary>
+                <div class="entry__left">
+                  <span class="entry__date">juin 2025</span>
+                  <span class="entry__title">Performance : images + chargement propre</span>
+                </div>
+                <div class="entry__right">
+                  <span>Voir</span>
+                  <span class="chev" aria-hidden="true">⌄</span>
+                </div>
+              </summary>
+              <div class="entry__body">
+                <p>Gagner en rapidité sans complexité : images optimisées et chargement intelligent.</p>
+                <ul class="entry__bullets">
+                  <li>Compresser les images et éviter les formats trop lourds.</li>
+                  <li>Utiliser lazy-loading quand possible.</li>
+                  <li>Limiter les grosses librairies inutiles.</li>
+                </ul>
+                <div class="sources">
+                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+                  <ul class="entry__bullets">
+                  <li><a href="https://web.dev/fast/" target="_blank" rel="noopener">web.dev — Fast load times</a></li>
+                  <li><a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML" target="_blank" rel="noopener">MDN — Images</a></li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+            <details class="entry">
+              <summary>
+                <div class="entry__left">
+                  <span class="entry__date">juillet 2025</span>
+                  <span class="entry__title">JavaScript propre : petites fonctions, événements, état simple</span>
+                </div>
+                <div class="entry__right">
+                  <span>Voir</span>
+                  <span class="chev" aria-hidden="true">⌄</span>
+                </div>
+              </summary>
+              <div class="entry__body">
+                <p>Plutôt que tout mettre dans une grosse fonction, découper : c’est plus facile à comprendre et à déboguer.</p>
+                <ul class="entry__bullets">
+                  <li>Une fonction = une responsabilité.</li>
+                  <li>Événements clairs (click, input) + handlers séparés.</li>
+                  <li>Éviter les variables globales quand possible.</li>
+                </ul>
+                <div class="sources">
+                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+                  <ul class="entry__bullets">
+                  <li><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide" target="_blank" rel="noopener">MDN — JavaScript Guide</a></li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+            <details class="entry">
+              <summary>
+                <div class="entry__left">
+                  <span class="entry__date">août 2025</span>
+                  <span class="entry__title">UI/UX : lisibilité + cohérence</span>
+                </div>
+                <div class="entry__right">
+                  <span>Voir</span>
+                  <span class="chev" aria-hidden="true">⌄</span>
+                </div>
+              </summary>
+              <div class="entry__body">
+                <p>Un bon design n’a pas besoin d’être compliqué : espacements réguliers, textes courts, actions visibles.</p>
+                <ul class="entry__bullets">
+                  <li>Garder une hiérarchie : titre → sous-titre → contenu.</li>
+                  <li>Éviter les pages trop chargées.</li>
+                  <li>Boutons cohérents (même style, mêmes mots).</li>
+                </ul>
+                <div class="sources">
+                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+                  <ul class="entry__bullets">
+                  <li><a href="https://web.dev/learn/design/" target="_blank" rel="noopener">web.dev — Design basics</a></li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+            <details class="entry">
+              <summary>
+                <div class="entry__left">
+                  <span class="entry__date">septembre 2025</span>
+                  <span class="entry__title">SEO basique (sans prise de tête)</span>
+                </div>
+                <div class="entry__right">
+                  <span>Voir</span>
+                  <span class="chev" aria-hidden="true">⌄</span>
+                </div>
+              </summary>
+              <div class="entry__body">
+                <p>Même sur un petit site, quelques règles simples aident à être “compréhensible” : titres, description, structure.</p>
+                <ul class="entry__bullets">
+                  <li>Balises title + meta description.</li>
+                  <li>Une page = un sujet clair.</li>
+                  <li>Liens internes propres (menu, ancres).</li>
+                </ul>
+                <div class="sources">
+                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+                  <ul class="entry__bullets">
+                  <li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener">Google Search Central — SEO Starter Guide</a></li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+            <details class="entry">
+              <summary>
+                <div class="entry__left">
+                  <span class="entry__date">octobre 2025</span>
+                  <span class="entry__title">Sécurité front minimale : éviter les pièges</span>
+                </div>
+                <div class="entry__right">
+                  <span>Voir</span>
+                  <span class="chev" aria-hidden="true">⌄</span>
+                </div>
+              </summary>
+              <div class="entry__body">
+                <p>Sans faire de cyber, adopter des réflexes : ne pas exposer des infos sensibles et traiter les inputs proprement.</p>
+                <ul class="entry__bullets">
+                  <li>Ne jamais stocker des secrets dans le front (clé API publique).</li>
+                  <li>Valider côté serveur si tu as un backend.</li>
+                  <li>Faire attention au copier/coller de scripts externes.</li>
+                </ul>
+                <div class="sources">
+                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+                  <ul class="entry__bullets">
+                  <li><a href="https://owasp.org/www-project-web-security-testing-guide/" target="_blank" rel="noopener">OWASP — Web Security Testing Guide (overview)</a></li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+            <details class="entry">
+              <summary>
+                <div class="entry__left">
+                  <span class="entry__date">novembre 2025</span>
+                  <span class="entry__title">Documentation : README + captures + étapes</span>
+                </div>
+                <div class="entry__right">
+                  <span>Voir</span>
+                  <span class="chev" aria-hidden="true">⌄</span>
+                </div>
+              </summary>
+              <div class="entry__body">
+                <p>Pour un projet BTS, la doc compte : expliquer le but, les fonctionnalités, et comment lancer/tester.</p>
+                <ul class="entry__bullets">
+                  <li>README clair : objectif, features, installation.</li>
+                  <li>Ajouter 2–3 captures d’écran.</li>
+                  <li>Lister les technos utilisées (HTML/CSS/JS/Python…).</li>
+                </ul>
+                <div class="sources">
+                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+                  <ul class="entry__bullets">
+                  <li><a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes" target="_blank" rel="noopener">GitHub Docs — README</a></li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+            <details class="entry">
+              <summary>
+                <div class="entry__left">
+                  <span class="entry__date">décembre 2025</span>
+                  <span class="entry__title">Déploiement simple : GitHub Pages / hébergeurs statiques</span>
+                </div>
+                <div class="entry__right">
+                  <span>Voir</span>
+                  <span class="chev" aria-hidden="true">⌄</span>
+                </div>
+              </summary>
+              <div class="entry__body">
+                <p>Mettre un site en ligne facilement : pratique pour montrer tes projets au jury.</p>
+                <ul class="entry__bullets">
+                  <li>Portfolio statique : GitHub Pages est parfait.</li>
+                  <li>Nommer proprement le repo et vérifier les chemins.</li>
+                  <li>Tester sur mobile une fois en ligne.</li>
+                </ul>
+                <div class="sources">
+                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+                  <ul class="entry__bullets">
+                  <li><a href="https://docs.github.com/en/pages" target="_blank" rel="noopener">GitHub Docs — GitHub Pages</a></li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+            <details class="entry">
+              <summary>
+                <div class="entry__left">
+                  <span class="entry__date">janvier 2026</span>
+                  <span class="entry__title">Bilan : checklist “site propre”</span>
+                </div>
+                <div class="entry__right">
+                  <span>Voir</span>
+                  <span class="chev" aria-hidden="true">⌄</span>
+                </div>
+              </summary>
+              <div class="entry__body">
+                <p>Synthèse de la veille en une checklist rapide, à appliquer avant rendu ou mise en ligne.</p>
+                <ul class="entry__bullets">
+                  <li>Responsive OK (mobile/desktop), menu fonctionnel.</li>
+                  <li>Accessibilité de base : titres, clavier, contraste.</li>
+                  <li>Performance : images optimisées, pas de scripts inutiles.</li>
+                </ul>
+                <div class="sources">
+                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+                  <ul class="entry__bullets">
+                  <li><a href="https://web.dev/learn/" target="_blank" rel="noopener">web.dev — Learn</a></li>
+                  <li><a href="https://developer.mozilla.org/fr/docs/Learn" target="_blank" rel="noopener">MDN — Learn Web Development</a></li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+<footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted small">© <span id="year"></span> — Portfolio BTS SIO SLAM — Clément OLIVIER</p>
+      <p class="muted small">Fait en HTML/CSS/JS (statique) • Thème clair/sombre • Animations légères</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
