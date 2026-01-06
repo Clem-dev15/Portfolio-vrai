@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Portfolio BTS SIO SLAM — Clément OLIVIER</title>
+  <meta name="description" content="Portfolio BTS SIO (SLAM) : projets, compétences, veille technologique, contact." />
+  <link rel="preload" href="assets/css/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="topbar" role="banner">
+    <div class="container topbar__inner">
+      <a class="brand" href="#accueil" aria-label="Retour en haut">
+        <span class="brand__mark" aria-hidden="true">◆</span>
+        <span class="brand__text">Portfolio <span class="muted">BTS SIO</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+          <span class="sr-only">Ouvrir le menu</span>
+          <span class="burger" aria-hidden="true"></span>
+        </button>
+        <div id="navLinks" class="nav__links">
+          <a href="#projets">Projets</a>
+          <a href="#competences">Compétences</a>
+          <a href="veille.html">Veille</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn--ghost" href="assets/docs/cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="Changer de thème">🌗</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <!-- HERO -->
+    <section id="accueil" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <p class="pill reveal">BTS SIO • 2e année • Option SLAM</p>
+          <h1 class="reveal">Clément OLIVIER</h1>
+          <p class="lead reveal">
+            Étudiant en BTS SIO (SLAM), je développe des projets concrets et propres : du Python pour la logique, et du web pour des interfaces fluides. Je privilégie un code lisible, des tests quand c’est pertinent, et une expérience utilisateur simple.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a class="btn" href="#projets">Voir les projets</a>
+            <a class="btn btn--ghost" href="#contact">Me contacter</a>
+          </div>
+
+          <dl class="stats reveal" aria-label="Chiffres clés">
+            <div class="stat">
+              <dt>Projets</dt>
+              <dd id="statProjects">5</dd>
+            </div>
+            <div class="stat">
+              <dt>Techs</dt>
+              <dd>Python • JS • Web</dd>
+            </div>
+            <div class="stat">
+              <dt>Veille</dt>
+              <dd>Mars 2025 → Jan 2026</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__right reveal" aria-hidden="true">
+          <div class="orb"></div>
+          <div class="glass-card">
+            <p class="glass-card__kicker">Focus SLAM</p>
+            <p class="glass-card__title">Coder → Tester → Déployer</p>
+            <p class="glass-card__text">SLAM (<strong>Solutions Logicielles et Applications Métiers</strong>) : spécialité du BTS SIO orientée <strong>développement</strong> (web/logiciel), tests et maintenance d’applications.</p>
+            <div class="chips">
+              <span class="chip">POO</span>
+              <span class="chip">Git</span>
+              <span class="chip">API</span>
+              <span class="chip">UI</span>
+              <span class="chip">Sécurité</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section">
+      <div class="container grid2">
+        <div class="reveal">
+          <h2>À propos</h2>
+          <p>Je m’appelle <strong>Clément OLIVIER</strong>, étudiant en BTS SIO (SLAM). J’aime la création de sites web et d’applications informatiques : partir d’une idée, la transformer en quelque chose de concret, et améliorer petit à petit le résultat.</p>
+</div>
+
+        <div class="reveal">
+          <div class="card">
+            <h3>Objectifs</h3>
+            <ul class="list">
+              <li>Valider les compétences du référentiel BTS SIO (SLAM)</li>
+              <li>Présenter des projets complets (code, doc, démo)</li>
+              <li>Montrer une veille régulière et utile</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projets" class="section section--alt">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <h2>Projets</h2>
+          </div>
+
+          <div class="filters" role="group" aria-label="Filtres des projets">
+            <button class="chip chip--btn is-active" data-filter="all" type="button">Tous</button>
+            <button class="chip chip--btn" data-filter="cours" type="button">Projet en cours</button>
+            <button class="chip chip--btn" data-filter="stage" type="button">Projet en stage</button>
+          </div>
+        </div>
+
+        <div id="projectsGrid" class="cards" aria-label="Liste de projets"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="competences" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <h2>Compétences (BTS SIO • SLAM)</h2>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <div class="card reveal">
+            <h3>Concevoir & Développer</h3>
+            <ul class="list">
+              <li>Algorithmique, POO, structures de données (Python)</li>
+              <li>Interfaces web : HTML / CSS / JavaScript</li>
+              <li>Tests, refactoring, amélioration continue</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Gérer des données</h3>
+            <ul class="list">
+              <li>Modélisation (MERISE / UML)</li>
+              <li>CRUD, validation, cohérence</li>
+              <li>Optimisation & bonnes pratiques</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Déployer & Sécuriser</h3>
+            <ul class="list">
+              <li>Git/GitHub, versioning</li>
+              <li>Bonnes pratiques OWASP côté front</li>
+              <li>Documentation et livraison propre</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Langages & techno</h3>
+            <ul class="list">
+              <li>HTML • CSS • JavaScript</li>
+              <li>PHP</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Markdown</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container grid2">
+        <div class="reveal">
+          <h2>Contact</h2>
+<div class="contact-cards">
+            <a id="linkGithub" class="card card--link" href="#" target="_blank" rel="noopener">
+              <span class="card--link__title">GitHub</span>
+              <span class="muted small">Projets & code</span>
+            </a>
+            <a id="linkLinkedIn" class="card card--link" href="#" target="_blank" rel="noopener">
+              <span class="card--link__title">LinkedIn</span>
+              <span class="muted small">Profil & parcours</span>
+            </a>
+            <a id="linkEmail" class="card card--link" href="#">
+              <span class="card--link__title">Email</span>
+              <span class="muted small">Me joindre</span>
+            </a>
+          </div>
+        </div>
+</div>
+    </section>
+
+    <!-- MODAL -->
+    <dialog class="modal" id="projectModal" aria-label="Détails du projet">
+      <div class="modal__header">
+        <div>
+          <p class="modal__kicker" id="modalKicker"></p>
+          <h3 class="modal__title" id="modalTitle"></h3>
+        </div>
+        <button class="btn btn--ghost" id="modalClose" type="button" aria-label="Fermer">✕</button>
+      </div>
+
+      <div class="modal__body">
+        <p id="modalDesc"></p>
+        <div class="chips" id="modalTags"></div>
+        <div class="modal__links" id="modalLinks"></div>
+</div>
+    </dialog>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted small">© <span id="year"></span> — Portfolio BTS SIO SLAM — Clément OLIVIER</p>
+      <p class="muted small">Fait en HTML/CSS/JS (statique) • Thème clair/sombre • Animations légères</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
