@@ -1,0 +1,218 @@
+[
+  {
+    "month": "2025-03",
+    "title": "Les “agents” deviennent un vrai sujet dev",
+    "summary": "Ce mois-ci, la veille a surtout porté sur ce qu’on appelle un agent (perception → planification → action) et sur les premiers cas d’usage dev (outils, scripts, tâches répétitives).",
+    "points": [
+      "Différence clé : un agent agit (outils, fichiers, terminal), pas seulement répondre.",
+      "Bon réflexe SLAM : garder une validation humaine (revue, tests) à chaque étape.",
+      "Commencer simple : petit agent “todo” (création de fichiers, checks, logs)."
+    ],
+    "sources": [
+      {
+        "label": "Zeta Alpha — Trends in AI (Mar 2025) : AI Agents",
+        "url": "https://www.zeta-alpha.com/post/trends-in-ai-march-25-ai-agents"
+      }
+    ]
+  },
+  {
+    "month": "2025-04",
+    "title": "Régulation : mieux cadrer ce qui est (ou non) un “système IA”",
+    "summary": "Focus sur l’AI Act : définition, périmètre, et ce que ça implique pour un projet logiciel (documentation, transparence, conformité selon le risque).",
+    "points": [
+      "Comprendre la définition “AI system” pour savoir si le projet est concerné.",
+      "Se préparer à documenter : objectif, données, limites, risques.",
+      "Côté dev : tracer les versions, logs, et décisions de conception."
+    ],
+    "sources": [
+      {
+        "label": "Commission — Guidelines on AI system definition (Feb 2025)",
+        "url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application"
+      },
+      {
+        "label": "Gide — Analyse des guidelines (Apr 2025)",
+        "url": "https://www.gide.com/en/news-insights/publication-of-two-sets-of-guidelines-in-connection-with-the-ai-act/"
+      }
+    ]
+  },
+  {
+    "month": "2025-05",
+    "title": "Agents de dev : Codex (OpenAI) arrive en mode “software engineer”",
+    "summary": "On voit émerger des agents capables de bosser en parallèle sur des tâches d’ingénierie logicielle (features, bugs, PR).",
+    "points": [
+      "Approche “tâches parallèles” : une tâche = un environnement isolé.",
+      "Pour SLAM : utile pour accélérer le scaffolding, mais garder tests + revue.",
+      "Bonne pratique : décrire clairement l’objectif, contraintes, et critères d’acceptation."
+    ],
+    "sources": [
+      {
+        "label": "OpenAI — Introducing Codex (May 16, 2025)",
+        "url": "https://openai.com/index/introducing-codex/"
+      },
+      {
+        "label": "TechCrunch — OpenAI launches Codex (May 16, 2025)",
+        "url": "https://techcrunch.com/2025/05/16/openai-launches-codex-an-ai-coding-agent-in-chatgpt/"
+      }
+    ]
+  },
+  {
+    "month": "2025-06",
+    "title": "L’agent dans le terminal : productivité, mais aussi nouvelles habitudes",
+    "summary": "Les outils “terminal-first” (style Claude Code) poussent l’idée d’un assistant qui manipule fichiers + commandes, donc besoin de discipline (logs, permissions, rollback).",
+    "points": [
+      "Travailler avec un vrai protocole : branche Git, commits fréquents, tests.",
+      "Limiter les permissions de l’agent (principe du moindre privilège).",
+      "Documenter les actions : utile pour dossier E6/E5 et pour la sécurité."
+    ],
+    "sources": [
+      {
+        "label": "Anthropic — Claude 3.7 Sonnet & Claude Code (Feb 24, 2025)",
+        "url": "https://www.anthropic.com/news/claude-3-7-sonnet"
+      },
+      {
+        "label": "DataPro — Anthropic's Terminal Takeover (Jun 25, 2025)",
+        "url": "https://www.datapro.news/p/anthropic-s-terminal-takeover"
+      }
+    ]
+  },
+  {
+    "month": "2025-07",
+    "title": "AI Act : Code of Practice GPAI (transparence, copyright, sécurité)",
+    "summary": "Le Code of Practice (volontaire) sert de cadre pour aider les éditeurs de modèles IA généralistes à préparer la conformité : transparence, droit d’auteur, sécurité.",
+    "points": [
+      "Pour un dev : ça inspire de bonnes pratiques (doc modèle/outil, limites).",
+      "Attention au droit d’auteur : données d’entraînement / contenus générés.",
+      "La sécurité devient un sujet central (tests, red teaming, traçabilité)."
+    ],
+    "sources": [
+      {
+        "label": "European Commission — GPAI Code of Practice",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai"
+      },
+      {
+        "label": "AP News — EU releases code of practice (July 2025)",
+        "url": "https://apnews.com/article/a3df6a1a8789eea7fcd17bffc750e291"
+      }
+    ]
+  },
+  {
+    "month": "2025-08",
+    "title": "AI Act : obligations GPAI applicables (début de phase)",
+    "summary": "Les règles AI Act liées aux modèles IA généralistes deviennent applicables : transparence, gestion des risques, et exigences renforcées pour certains modèles.",
+    "points": [
+      "Pour SLAM : intégrer une “fiche modèle/outils” dans les docs de projet.",
+      "Prévoir une politique d’usage IA (ce qui est autorisé/interdit).",
+      "Mettre en place des garde-fous : validation, limitations, journalisation."
+    ],
+    "sources": [
+      {
+        "label": "European Commission — AI Act timeline (application timeline)",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+      },
+      {
+        "label": "Commission — Drawing-up a GPAI Code of Practice (timeline)",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-code-practice"
+      }
+    ]
+  },
+  {
+    "month": "2025-09",
+    "title": "Agents dans l’écosystème dev : Copilot “coding agent” + upgrades Codex",
+    "summary": "Les agents s’intègrent dans les workflows Git/IDE : délégation de tâches, exécution de tests, validation multi-fichiers, et suivi des sessions.",
+    "points": [
+      "Pattern utile : “Plan mode” → approbation → exécution → tests → PR.",
+      "Pour SLAM : gagner du temps sur refactor/clean code (mais garder la main).",
+      "Toujours exiger : logs des actions + reproductibilité."
+    ],
+    "sources": [
+      {
+        "label": "GitHub Blog — Copilot coding agent 101 (Sept 11, 2025)",
+        "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-coding-agent-101-getting-started-with-agentic-workflows-on-github/"
+      },
+      {
+        "label": "OpenAI — Upgrades to Codex (Sept 15, 2025)",
+        "url": "https://openai.com/index/introducing-upgrades-to-codex/"
+      }
+    ]
+  },
+  {
+    "month": "2025-10",
+    "title": "Accélération “agentic” : DevDay (kits agents) + outils sécurité",
+    "summary": "Les annonces autour des kits/plateformes d’agents et des agents orientés sécurité montrent une maturité : agents outillés, orchestration, exécution et contrôle.",
+    "points": [
+      "Tendance : un chatbot devient un “endroit où le logiciel s’exécute”.",
+      "Pour SLAM : attention à la sécurité (secrets, accès, revues, policy).",
+      "Garder une architecture claire : séparation prompts / outils / permissions."
+    ],
+    "sources": [
+      {
+        "label": "OpenAI Research — Release index (Oct 2025)",
+        "url": "https://openai.com/research/index/release/"
+      },
+      {
+        "label": "InfoQ — DevDay 2025 announcements (Oct 2025)",
+        "url": "https://www.infoq.com/news/2025/10/openai-dev-day/"
+      }
+    ]
+  },
+  {
+    "month": "2025-11",
+    "title": "Agents multi-outils : raisonnement + exécution + sessions longues",
+    "summary": "Les modèles et plateformes poussent l’usage multi-outils (découvrir/appeler des outils, gérer des sessions longues) avec une attention aux workflows dev.",
+    "points": [
+      "Approche “outil dynamique” : l’agent apprend et exécute des outils.",
+      "En dev : excellent pour tâches longues (migration, refacto, docs).",
+      "Risque : dérives → imposer contraintes, checklists, et tests."
+    ],
+    "sources": [
+      {
+        "label": "Anthropic — Introducing Claude Opus 4.5 (Nov 24, 2025)",
+        "url": "https://www.anthropic.com/news/claude-opus-4-5"
+      },
+      {
+        "label": "Anthropic Engineering — Advanced tool use (Nov 24, 2025)",
+        "url": "https://www.anthropic.com/engineering/advanced-tool-use"
+      }
+    ]
+  },
+  {
+    "month": "2025-12",
+    "title": "Agentic coding “pro” : modèles spécialisés + tendances dev 2025",
+    "summary": "Les modèles orientés “coding agent” progressent (refactors, migrations, sécurité) et 2025 se clôt sur des tendances fortes : agentic tech, workflows, et nouvelles pratiques.",
+    "points": [
+      "Les modèles “codex” ciblent tâches longues (context management, refactor).",
+      "La sécurité prend de l’importance (défense, validation, audits).",
+      "Pour SLAM : adopter un workflow “spec → plan → code → tests → PR”."
+    ],
+    "sources": [
+      {
+        "label": "OpenAI — Introducing GPT-5.2-Codex (Dec 18, 2025)",
+        "url": "https://openai.com/index/introducing-gpt-5-2-codex/"
+      },
+      {
+        "label": "The New Stack — AI engineering trends in 2025 (Dec 22, 2025)",
+        "url": "https://thenewstack.io/ai-engineering-trends-in-2025-agents-mcp-and-vibe-coding/"
+      }
+    ]
+  },
+  {
+    "month": "2026-01",
+    "title": "Début 2026 : “agentic AI” = impact réel → besoin de garde-fous",
+    "summary": "On bascule vers une question très concrète : fiabilité, traçabilité, consentement et responsabilité quand l’IA agit à la place de l’utilisateur.",
+    "points": [
+      "Mettre des garde-fous : traces, confirmations, limites de délégation.",
+      "En entreprise : viser l’utilité + conformité plutôt que la “course aux specs”.",
+      "Pour SLAM : documenter et prouver la qualité (tests, logs, contrôle)."
+    ],
+    "sources": [
+      {
+        "label": "Washington Post — agentic AI & guardrails (Jan 5, 2026)",
+        "url": "https://www.washingtonpost.com/opinions/2026/01/05/agentic-artificial-intelligence-ai-tech/"
+      },
+      {
+        "label": "Axios — 2026 is AI's 'show me the money' year (Jan 1, 2026)",
+        "url": "https://www.axios.com/2026/01/01/ai-2026-money-openai-google-anthropic-agents"
+      }
+    ]
+  }
+]
