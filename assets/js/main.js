@@ -6,7 +6,7 @@
 const LINKS = {
   github: "https://github.com/Clem-dev15",
   linkedin: "https://www.linkedin.com/in/TON_PROFIL",
-  email: "mailto:ton.mail@example.com",
+  email: "mailto:clement150942800@outlook.fr",
 };
 
 const PROJECTS = [
