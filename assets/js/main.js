@@ -34,7 +34,7 @@ const PROJECTS = [
     tags: ["HTML", "CSS", "JS"],
     links: [
       { label: "Démo", url: "#" },
-      { label: "Repo GitHub", url: "https://github.com/Clem-dev15/beeflix" },
+      { label: "Repo GitHub", url: "https://github.com/Clem-dev15/netflix-le-vrai.git" },
     ],
     badges: ["Web", "UI"],
   },
