@@ -19,7 +19,7 @@ const PROJECTS = [
       "Jeu type Monopoly en Python : gestion des tours, dés, achats, loyers, prison, et une logique orientée objet pour garder un code propre et testable.",
     tags: ["Python", "POO", "Structures", "Console/GUI"],
     links: [
-      { label: "Repo GitHub", url: "https://github.com/Clem-dev15/monopoly-python" },
+      { label: "Repo GitHub", url: "https://github.com/Clem-dev15/Monopoly-Foot.git" },
       { label: "Documentation", url: "#" },
     ],
     badges: ["Python", "POO"],
