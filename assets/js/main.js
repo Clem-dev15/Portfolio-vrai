@@ -47,7 +47,7 @@ const PROJECTS = [
       "Site vitrine WordPress pour un magasin de vélos : présentation, services, contact, et un design orienté conversion (CTA).",
     tags: ["WordPress", "HTML", "CSS", "JS"],
     links: [
-      { label: "Site en ligne", url: "#" },
+      { label: "Site en ligne", url: "https://pilatbikeservices.com/" },
       { label: "Capture / PDF", url: "#" },
     ],
     badges: ["Web", "WordPress"],
@@ -78,7 +78,7 @@ const PROJECTS = [
       "Site vitrine WordPress pour le salon de beauté MIVA : présentation, services, galerie, prise de contact (et réservation selon version).",
     tags: ["WordPress", "HTML", "CSS", "UI"],
     links: [
-      { label: "Site en ligne", url: "#" },
+      { label: "Site en ligne", url: "https://institutsalonbeautemiva.com/" },
       { label: "Captures / PDF", url: "#" },
     ],
     badges: ["Web", "WordPress"],
