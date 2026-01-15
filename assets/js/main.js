@@ -30,13 +30,13 @@ const PROJECTS = [
     kicker: "Front web (Netflix-like)",
     category: "cours",
     desc:
-      "Clone front (type Netflix) en HTML/CSS/JS : page d’accueil, fiches, interactions, et une UI responsive avec animations.",
+      "Clone front (type Netflix) en HTML/CSS/JS : page d’accueil, fiches, interactions",
     tags: ["HTML", "CSS", "JS"],
     links: [
       { label: "Démo", url: "#" },
       { label: "Repo GitHub", url: "https://github.com/Clem-dev15/netflix-le-vrai.git" },
     ],
-    badges: ["Web", "UI"],
+    badges: ["Web"],
   },
   {
     id: "pilatbikes",
@@ -44,7 +44,7 @@ const PROJECTS = [
     kicker: "Projet web (WordPress)",
     category: "stage",
     desc:
-      "Site vitrine WordPress pour un magasin de vélos : présentation, services, contact, et un design orienté conversion (CTA).",
+      "Site vitrine WordPress pour un magasin de vélos : présentation, services, contact et un nouveau design pour leur site web",
     tags: ["WordPress", "HTML", "CSS", "JS"],
     links: [
       { label: "Site en ligne", url: "https://pilatbikeservices.com/" },
@@ -75,7 +75,7 @@ const PROJECTS = [
     kicker: "Site WordPress — Salon de beauté",
     category: "stage",
     desc:
-      "Site vitrine WordPress pour le salon de beauté MIVA : présentation, services, galerie, prise de contact (et réservation selon version).",
+      "Site vitrine WordPress pour le salon de beauté MIVA : présentation, services, galerie",
     tags: ["WordPress", "HTML", "CSS", "UI"],
     links: [
       { label: "Site en ligne", url: "https://institutsalonbeautemiva.com/" },
