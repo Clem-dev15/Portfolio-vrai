@@ -19,7 +19,7 @@ const PROJECTS = [
       "Jeu type Monopoly en Python : gestion des tours, dés, achats, loyers, prison, et une logique orientée objet pour garder un code propre et testable.",
     tags: ["Python", "POO", "Structures", "Console/GUI"],
     links: [
-      { label: "Repo GitHub", url: "https://github.com/Clem-dev15/Monopoly-Foot.git" },
+      { label: "Repo GitHub", url: "https://github.com/Matmat42/Monopoly.git" },
       { label: "Documentation", url: "#" },
     ],
     badges: ["Python", "POO"],
@@ -62,7 +62,7 @@ const PROJECTS = [
       "Site e-commerce de vente de puzzles : catalogue, fiche produit, panier (selon version), et données reliées à une base SQL. Développé en PHP avec un environnement local Laragon.",
     tags: ["PHP", "SQL", "Laragon", "HTML", "CSS", "JS"],
     links: [
-      { label: "Repo GitHub", url: "https://github.com/Clem-dev15/woodycraft" },
+      { label: "Repo GitHub", url: "https://github.com/Clem-dev15/WoodyCraftWeb.git" },
       { label: "Démo / captures", url: "#" },
     ],
     badges: ["Web", "PHP"],
