@@ -1,242 +1,181 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="light dark" />
-  <title>Veille technologique — Animation 3D avec Blender — Clément OLIVIER</title>
-  <meta name="description" content="Veille technologique BTS SIO SLAM : apprentissage de l’animation 3D avec Blender (outils, méthodes, progression continue)." />
-  <link rel="preload" href="assets/css/styles.css" as="style" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-</head>
-
-<body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-
-  <header class="topbar" role="banner">
-    <div class="container topbar__inner">
-      <a class="brand" href="index.html#accueil" aria-label="Retour en haut">
-        <span class="brand__mark" aria-hidden="true">◆</span>
-        <span class="brand__text">Portfolio <span class="muted">BTS SIO</span></span>
-      </a>
-
-      <nav class="nav" aria-label="Navigation principale">
-        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navLinks">
-          <span class="sr-only">Ouvrir le menu</span>
-          <span class="burger" aria-hidden="true"></span>
-        </button>
-        <div id="navLinks" class="nav__links">
-          <a href="index.html#projets">Projets</a>
-          <a href="index.html#competences">Compétences</a>
-          <a href="veille.html">Veille</a>
-          <a href="index.html#contact">Contact</a>
-          <a class="btn btn--ghost" href="assets/docs/cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-          <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="Changer de thème">🌗</button>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main id="contenu">
-
-    <!-- HERO -->
-    <section class="hero" style="padding: 70px 0 40px;">
-      <div class="container">
-        <p class="pill reveal">Veille technologique</p>
-        <h1 class="reveal">Apprentissage de l’animation 3D avec Blender</h1>
-        <p class="lead reveal">
-          Découverte, outils et progression continue — résumé mensuel (mars 2025 → janvier 2026).
+<!-- VEILLE -->
+<section id="veille" class="section section--alt">
+  <div class="container">
+    <div class="section__head reveal">
+      <div>
+        <h2>Veille technologique</h2>
+        <p class="muted">
+          Sujet : <strong>Mon apprentissage de l’animation 3D avec Blender</strong> — veille continue.
         </p>
-        <div class="hero__cta reveal">
-          <a class="btn" href="index.html#projets">Voir les projets</a>
-          <a class="btn btn--ghost" href="index.html#contact">Contact</a>
-        </div>
       </div>
-      <div class="hero__bg" aria-hidden="true"></div>
-    </section>
-
-    <!-- VEILLE -->
-    <section id="veille" class="section section--alt">
-      <div class="container">
-        <div class="section__head reveal">
-          <div>
-            <h2>Veille technologique</h2>
-            <p class="muted">
-              Sujet : <strong>Mon apprentissage de l’animation 3D avec Blender</strong> — veille continue.
-            </p>
-          </div>
-        </div>
-
-        <div class="veil">
-          <!-- SIDEBAR -->
-          <div class="veil__sidebar reveal">
-            <div class="card">
-              <h3>Pourquoi ce sujet ?</h3>
-              <p>
-                J’ai choisi ce sujet car je m’intéresse à la création 3D et plus particulièrement à l’animation.
-                Blender est un logiciel libre et très complet, utilisé aussi bien par des amateurs que des professionnels.
-                Cette veille me permet de suivre mon évolution et d’approfondir mes compétences techniques.
-              </p>
-              <p class="muted small">
-                Les ressources utilisées sont issues de tutoriels, documentations et pratiques personnelles.
-              </p>
-            </div>
-          </div>
-
-          <!-- CONTENU -->
-          <div class="veil__content reveal">
-            <div class="timeline" id="veilleTimeline" aria-label="Chronologie de veille">
-
-              <!-- Mars 2025 -->
-              <details class="entry">
-                <summary>
-                  <div class="entry__left">
-                    <span class="entry__date">mars 2025</span>
-                    <span class="entry__title">Découverte de Blender et de son interface</span>
-                  </div>
-                  <div class="entry__right">
-                    <span>Voir</span>
-                    <span class="chev">⌄</span>
-                  </div>
-                </summary>
-                <div class="entry__body">
-                  <p>Première prise en main de Blender et découverte de l’environnement de travail.</p>
-                  <ul class="entry__bullets">
-                    <li>Navigation dans la vue 3D.</li>
-                    <li>Manipulation des objets (déplacement, rotation, échelle).</li>
-                    <li>Différence entre Object Mode et Edit Mode.</li>
-                  </ul>
-                </div>
-              </details>
-
-              <!-- Avril 2025 -->
-              <details class="entry">
-                <summary>
-                  <div class="entry__left">
-                    <span class="entry__date">avril 2025</span>
-                    <span class="entry__title">Premières animations avec des images clés</span>
-                  </div>
-                  <div class="entry__right">
-                    <span>Voir</span>
-                    <span class="chev">⌄</span>
-                  </div>
-                </summary>
-                <div class="entry__body">
-                  <p>Découverte du principe d’animation par keyframes.</p>
-                  <ul class="entry__bullets">
-                    <li>Animation simple de position et rotation.</li>
-                    <li>Utilisation de la timeline.</li>
-                    <li>Compréhension du principe image par image.</li>
-                  </ul>
-                </div>
-              </details>
-
-              <!-- Mai 2025 -->
-              <details class="entry">
-                <summary>
-                  <div class="entry__left">
-                    <span class="entry__date">mai 2025</span>
-                    <span class="entry__title">Amélioration de la fluidité avec le Graph Editor</span>
-                  </div>
-                  <div class="entry__right">
-                    <span>Voir</span>
-                    <span class="chev">⌄</span>
-                  </div>
-                </summary>
-                <div class="entry__body">
-                  <p>Utilisation des courbes d’animation pour rendre les mouvements plus naturels.</p>
-                  <ul class="entry__bullets">
-                    <li>Gestion des accélérations et décélérations.</li>
-                    <li>Lecture et modification des courbes.</li>
-                    <li>Animations plus réalistes.</li>
-                  </ul>
-                </div>
-              </details>
-
-              <!-- Septembre 2025 -->
-              <details class="entry">
-                <summary>
-                  <div class="entry__left">
-                    <span class="entry__date">septembre 2025</span>
-                    <span class="entry__title">Découverte du rigging et des armatures</span>
-                  </div>
-                  <div class="entry__right">
-                    <span>Voir</span>
-                    <span class="chev">⌄</span>
-                  </div>
-                </summary>
-                <div class="entry__body">
-                  <p>Introduction au rigging pour animer des personnages ou objets articulés.</p>
-                  <ul class="entry__bullets">
-                    <li>Création d’armatures.</li>
-                    <li>Association des os au modèle.</li>
-                    <li>Premiers mouvements articulés.</li>
-                  </ul>
-                </div>
-              </details>
-
-              <!-- Novembre 2025 -->
-              <details class="entry">
-                <summary>
-                  <div class="entry__left">
-                    <span class="entry__date">novembre 2025</span>
-                    <span class="entry__title">Rendu et export des animations</span>
-                  </div>
-                  <div class="entry__right">
-                    <span>Voir</span>
-                    <span class="chev">⌄</span>
-                  </div>
-                </summary>
-                <div class="entry__body">
-                  <p>Apprentissage des réglages de rendu pour exporter une animation finale.</p>
-                  <ul class="entry__bullets">
-                    <li>Choix entre Eevee et Cycles.</li>
-                    <li>Réglages de base de l’éclairage et de la caméra.</li>
-                    <li>Export en format vidéo (MP4).</li>
-                  </ul>
-                </div>
-              </details>
-
-              <!-- Janvier 2026 -->
-              <details class="entry">
-                <summary>
-                  <div class="entry__left">
-                    <span class="entry__date">janvier 2026</span>
-                    <span class="entry__title">Approfondissement des animations et pratique régulière</span>
-                  </div>
-                  <div class="entry__right">
-                    <span>Voir</span>
-                    <span class="chev">⌄</span>
-                  </div>
-                </summary>
-                <div class="entry__body">
-                  <p>
-                    En janvier, je poursuis mon apprentissage en réalisant des animations plus complexes
-                    et en retravaillant mes anciens projets afin de les améliorer.
-                  </p>
-                  <ul class="entry__bullets">
-                    <li>Animations plus longues et plus détaillées.</li>
-                    <li>Travail sur les transitions entre mouvements.</li>
-                    <li>Corrections via le Graph Editor.</li>
-                  </ul>
-                </div>
-              </details>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p class="muted small">© <span id="year"></span> — Portfolio BTS SIO SLAM — Clément OLIVIER</p>
-      <p class="muted small">Fait en HTML/CSS/JS (statique) • Thème clair/sombre • Animations légères</p>
     </div>
-  </footer>
 
-  <script src="assets/js/main.js" defer></script>
-</body>
-</html>
+    <div class="veil">
+      <!-- SIDEBAR -->
+      <div class="veil__sidebar reveal">
+        <div class="card">
+          <h3>Pourquoi ce sujet ?</h3>
+          <p>
+            J’ai choisi ce sujet car je m’intéresse à la création 3D et plus particulièrement à l’animation.
+            Blender est un logiciel libre et très complet, utilisé aussi bien par des amateurs que des professionnels.
+            Cette veille me permet de suivre mon évolution et d’approfondir mes compétences techniques.
+          </p>
+          <p class="muted small">
+            Les ressources utilisées sont issues de tutoriels, documentations et pratiques personnelles.
+          </p>
+        </div>
+
+        <!-- Nouvelle bulle pour les moyens d'alertes -->
+        <div class="card">
+          <h3>Moyens d'alertes utilisés</h3>
+          <ul class="entry__bullets">
+            <li>Google Alertes</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- CONTENU -->
+      <div class="veil__content reveal">
+        <div class="timeline" id="veilleTimeline" aria-label="Chronologie de veille">
+
+          <!-- Mars 2025 -->
+          <details class="entry">
+            <summary>
+              <div class="entry__left">
+                <span class="entry__date">mars 2025</span>
+                <span class="entry__title">Découverte de Blender et de son interface</span>
+              </div>
+              <div class="entry__right">
+                <span>Voir</span>
+                <span class="chev">⌄</span>
+              </div>
+            </summary>
+            <div class="entry__body">
+              <p>Première prise en main de Blender et découverte de l’environnement de travail.</p>
+              <ul class="entry__bullets">
+                <li>Navigation dans la vue 3D.</li>
+                <li>Manipulation des objets (déplacement, rotation, échelle).</li>
+                <li>Différence entre Object Mode et Edit Mode.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Avril 2025 -->
+          <details class="entry">
+            <summary>
+              <div class="entry__left">
+                <span class="entry__date">avril 2025</span>
+                <span class="entry__title">Premières animations avec des images clés</span>
+              </div>
+              <div class="entry__right">
+                <span>Voir</span>
+                <span class="chev">⌄</span>
+              </div>
+            </summary>
+            <div class="entry__body">
+              <p>Découverte du principe d’animation par keyframes.</p>
+              <ul class="entry__bullets">
+                <li>Animation simple de position et rotation.</li>
+                <li>Utilisation de la timeline.</li>
+                <li>Compréhension du principe image par image.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Mai 2025 -->
+          <details class="entry">
+            <summary>
+              <div class="entry__left">
+                <span class="entry__date">mai 2025</span>
+                <span class="entry__title">Amélioration de la fluidité avec le Graph Editor</span>
+              </div>
+              <div class="entry__right">
+                <span>Voir</span>
+                <span class="chev">⌄</span>
+              </div>
+            </summary>
+            <div class="entry__body">
+              <p>Utilisation des courbes d’animation pour rendre les mouvements plus naturels.</p>
+              <ul class="entry__bullets">
+                <li>Gestion des accélérations et décélérations.</li>
+                <li>Lecture et modification des courbes.</li>
+                <li>Animations plus réalistes.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Septembre 2025 -->
+          <details class="entry">
+            <summary>
+              <div class="entry__left">
+                <span class="entry__date">septembre 2025</span>
+                <span class="entry__title">Découverte du rigging et des armatures</span>
+              </div>
+              <div class="entry__right">
+                <span>Voir</span>
+                <span class="chev">⌄</span>
+              </div>
+            </summary>
+            <div class="entry__body">
+              <p>Introduction au rigging pour animer des personnages ou objets articulés.</p>
+              <ul class="entry__bullets">
+                <li>Création d’armatures.</li>
+                <li>Association des os au modèle.</li>
+                <li>Premiers mouvements articulés.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Novembre 2025 -->
+          <details class="entry">
+            <summary>
+              <div class="entry__left">
+                <span class="entry__date">novembre 2025</span>
+                <span class="entry__title">Rendu et export des animations</span>
+              </div>
+              <div class="entry__right">
+                <span>Voir</span>
+                <span class="chev">⌄</span>
+              </div>
+            </summary>
+            <div class="entry__body">
+              <p>Apprentissage des réglages de rendu pour exporter une animation finale.</p>
+              <ul class="entry__bullets">
+                <li>Choix entre Eevee et Cycles.</li>
+                <li>Réglages de base de l’éclairage et de la caméra.</li>
+                <li>Export en format vidéo (MP4).</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Janvier 2026 -->
+          <details class="entry">
+            <summary>
+              <div class="entry__left">
+                <span class="entry__date">janvier 2026</span>
+                <span class="entry__title">Approfondissement des animations et pratique régulière</span>
+              </div>
+              <div class="entry__right">
+                <span>Voir</span>
+                <span class="chev">⌄</span>
+              </div>
+            </summary>
+            <div class="entry__body">
+              <p>
+                En janvier, je poursuis mon apprentissage en réalisant des animations plus complexes
+                et en retravaillant mes anciens projets afin de les améliorer.
+              </p>
+              <ul class="entry__bullets">
+                <li>Animations plus longues et plus détaillées.</li>
+                <li>Travail sur les transitions entre mouvements.</li>
+                <li>Corrections via le Graph Editor.</li>
+              </ul>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
