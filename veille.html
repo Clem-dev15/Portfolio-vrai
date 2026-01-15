@@ -4,12 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
-  <title>Veille technologique — Clément OLIVIER</title>
-  <meta name="description" content="Veille technologique BTS SIO SLAM : bonnes pratiques du développement web (responsive, accessibilité, performance) — résumé mensuel." />
+  <title>Veille technologique — Unreal Engine — Clément OLIVIER</title>
+  <meta name="description" content="Veille technologique BTS SIO SLAM : Unreal Engine (fonctionnalités, performances, usages) — résumé mensuel." />
   <link rel="preload" href="assets/css/styles.css" as="style" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
 </head>
+
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
 
@@ -37,14 +38,14 @@
     </div>
   </header>
 
-  
   <main id="contenu">
+    <!-- HERO -->
     <section class="hero" style="padding: 70px 0 40px;">
       <div class="container">
         <p class="pill reveal">Veille technologique</p>
-        <h1 class="reveal">Développement Web : bonnes pratiques</h1>
+        <h1 class="reveal">Unreal Engine : moteur de jeu temps réel</h1>
         <p class="lead reveal">
-          Responsive, accessibilité, performance — un résumé mensuel (mars 2025 → janvier 2026).
+          Fonctionnalités, performances et usages professionnels — résumé mensuel (mars 2025 → janvier 2026).
         </p>
         <div class="hero__cta reveal">
           <a class="btn" href="index.html#projets">Voir les projets</a>
@@ -54,224 +55,205 @@
       <div class="hero__bg" aria-hidden="true"></div>
     </section>
 
-<!-- VEILLE -->
+    <!-- VEILLE -->
     <section id="veille" class="section section--alt">
       <div class="container">
         <div class="section__head reveal">
           <div>
             <h2>Veille technologique</h2>
             <p class="muted">
-              Sujet : <strong>Développement Web : bonnes pratiques (responsive, accessibilité, performance)</strong> — résumé mensuel.
+              Sujet : <strong>Unreal Engine — moteur de jeu et de rendu temps réel</strong> — résumé mensuel.
             </p>
           </div>
         </div>
 
         <div class="veil">
+          <!-- SIDEBAR -->
           <div class="veil__sidebar reveal">
             <div class="card">
               <h3>Pourquoi ce sujet ?</h3>
-              <p>J’ai choisi ce sujet car je m’intéresse aux nouveautés autour du développement web : pour ma culture générale, mais aussi pour renforcer mes compétences, car j’aime apprendre de nouvelles choses régulièrement.</p>
+              <p>
+                J’ai choisi Unreal Engine car je m’intéresse au développement de jeux vidéo et aux moteurs temps réel.
+                Ce moteur est utilisé dans de nombreux domaines comme le jeu vidéo, le cinéma, l’architecture et la réalité virtuelle.
+                Cette veille me permet de suivre ses évolutions et de renforcer mes compétences techniques.
+              </p>
               <p class="muted small">
                 Les liens de sources sont listés dans chaque entrée.
               </p>
             </div>
           </div>
 
+          <!-- CONTENU -->
           <div class="veil__content reveal">
-                                          <div class="timeline" id="veilleTimeline" aria-label="Chronologie de veille">
-            <details class="entry">
-              <summary>
-                <div class="entry__left">
-                  <span class="entry__date">mars 2025</span>
-                  <span class="entry__title">Responsive : partir du mobile (mobile-first)</span>
-                </div>
-                <div class="entry__right">
-                  <span>Voir</span>
-                  <span class="chev" aria-hidden="true">⌄</span>
-                </div>
-              </summary>
-              <div class="entry__body">
-                <p>Objectif : avoir un site propre sur téléphone avant d’ajouter la version desktop. Ça évite les mises en page “cassées”.</p>
-                <ul class="entry__bullets">
-                  <li>Utiliser des unités fluides (%, rem) et des breakpoints simples.</li>
-                  <li>Tester sur 2 tailles : mobile + desktop (puis ajuster).</li>
-                  <li>Éviter les largeurs fixes inutiles.</li>
-                </ul>
-                <div class="sources">
-                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+            <div class="timeline" id="veilleTimeline" aria-label="Chronologie de veille">
+
+              <!-- Mars 2025 -->
+              <details class="entry">
+                <summary>
+                  <div class="entry__left">
+                    <span class="entry__date">mars 2025</span>
+                    <span class="entry__title">Présentation d’Unreal Engine 5</span>
+                  </div>
+                  <div class="entry__right">
+                    <span>Voir</span>
+                    <span class="chev">⌄</span>
+                  </div>
+                </summary>
+                <div class="entry__body">
+                  <p>Unreal Engine 5 est un moteur de jeu développé par Epic Games permettant de créer des expériences 3D en temps réel.</p>
                   <ul class="entry__bullets">
-                  <li><a href="https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank" rel="noopener">MDN — Responsive design</a></li>
+                    <li>Moteur gratuit avec conditions de royalties.</li>
+                    <li>Compatible PC, consoles et VR.</li>
+                    <li>Très utilisé dans l’industrie.</li>
+                  </ul>
+                  <div class="sources">
+                    <ul class="entry__bullets">
+                      <li><a href="https://www.unrealengine.com/" target="_blank" rel="noopener">Site officiel Unreal Engine</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+
+              <!-- Avril 2025 -->
+              <details class="entry">
+                <summary>
+                  <div class="entry__left">
+                    <span class="entry__date">avril 2025</span>
+                    <span class="entry__title">Nanite : géométrie virtuelle</span>
+                  </div>
+                  <div class="entry__right">
+                    <span>Voir</span>
+                    <span class="chev">⌄</span>
+                  </div>
+                </summary>
+                <div class="entry__body">
+                  <p>Nanite permet d’afficher des modèles 3D très détaillés sans perte importante de performances.</p>
+                  <ul class="entry__bullets">
+                    <li>Gestion automatique des niveaux de détail.</li>
+                    <li>Idéal pour les environnements complexes.</li>
+                    <li>Optimisation simplifiée.</li>
                   </ul>
                 </div>
-              </div>
-            </details>
-            <details class="entry">
-              <summary>
-                <div class="entry__left">
-                  <span class="entry__date">avril 2025</span>
-                  <span class="entry__title">Flexbox & Grid : choisir le bon outil</span>
-                </div>
-                <div class="entry__right">
-                  <span>Voir</span>
-                  <span class="chev" aria-hidden="true">⌄</span>
-                </div>
-              </summary>
-              <div class="entry__body">
-                <p>Flexbox pour aligner “en ligne” (menus, cartes), Grid pour structurer une page (sections, colonnes).</p>
-                <ul class="entry__bullets">
-                  <li>Flexbox : parfait pour une barre de navigation.</li>
-                  <li>Grid : idéal pour une grille de projets.</li>
-                  <li>Astuce : garder des règles simples et lisibles.</li>
-                </ul>
-                <div class="sources">
-                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+              </details>
+
+              <!-- Mai 2025 -->
+              <details class="entry">
+                <summary>
+                  <div class="entry__left">
+                    <span class="entry__date">mai 2025</span>
+                    <span class="entry__title">Lumen : éclairage dynamique</span>
+                  </div>
+                  <div class="entry__right">
+                    <span>Voir</span>
+                    <span class="chev">⌄</span>
+                  </div>
+                </summary>
+                <div class="entry__body">
+                  <p>Lumen est un système d’éclairage global dynamique calculé en temps réel.</p>
                   <ul class="entry__bullets">
-                  <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_flexible_box_layout" target="_blank" rel="noopener">MDN — Flexbox</a></li>
-                  <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_grid_layout" target="_blank" rel="noopener">MDN — Grid</a></li>
+                    <li>Éclairage réaliste.</li>
+                    <li>Pas de lightmaps précalculées.</li>
+                    <li>Gain de temps pour les développeurs.</li>
                   </ul>
                 </div>
-              </div>
-            </details>
-            <details class="entry">
-              <summary>
-                <div class="entry__left">
-                  <span class="entry__date">mai 2025</span>
-                  <span class="entry__title">Accessibilité : contrastes, titres, navigation clavier</span>
-                </div>
-                <div class="entry__right">
-                  <span>Voir</span>
-                  <span class="chev" aria-hidden="true">⌄</span>
-                </div>
-              </summary>
-              <div class="entry__body">
-                <p>Un site doit être utilisable par tous : lisible, navigable au clavier et cohérent (titres, labels).</p>
-                <ul class="entry__bullets">
-                  <li>Vérifier le contraste texte/fond.</li>
-                  <li>Structure : h1 → h2 → h3 (pas de saut).</li>
-                  <li>Tester la navigation avec Tab / Entrée.</li>
-                </ul>
-                <div class="sources">
-                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+              </details>
+
+              <!-- Septembre 2025 -->
+              <details class="entry">
+                <summary>
+                  <div class="entry__left">
+                    <span class="entry__date">septembre 2025</span>
+                    <span class="entry__title">Blueprints : programmation visuelle</span>
+                  </div>
+                  <div class="entry__right">
+                    <span>Voir</span>
+                    <span class="chev">⌄</span>
+                  </div>
+                </summary>
+                <div class="entry__body">
+                  <p>Les Blueprints permettent de créer des mécaniques de jeu sans écrire de code.</p>
                   <ul class="entry__bullets">
-                  <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener">W3C — WAI (Accessibility)</a></li>
-                  <li><a href="https://developer.mozilla.org/fr/docs/Web/Accessibility" target="_blank" rel="noopener">MDN — Accessibilité</a></li>
+                    <li>Système visuel par nœuds.</li>
+                    <li>Accessible aux débutants.</li>
+                    <li>Compatible avec le C++.</li>
                   </ul>
                 </div>
-              </div>
-            </details>
-            <details class="entry">
-              <summary>
-                <div class="entry__left">
-                  <span class="entry__date">septembre 2025</span>
-                  <span class="entry__title">SEO basique (sans prise de tête)</span>
-                </div>
-                <div class="entry__right">
-                  <span>Voir</span>
-                  <span class="chev" aria-hidden="true">⌄</span>
-                </div>
-              </summary>
-              <div class="entry__body">
-                <p>Même sur un petit site, quelques règles simples aident à être “compréhensible” : titres, description, structure.</p>
-                <ul class="entry__bullets">
-                  <li>Balises title + meta description.</li>
-                  <li>Une page = un sujet clair.</li>
-                  <li>Liens internes propres (menu, ancres).</li>
-                </ul>
-                <div class="sources">
-                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+              </details>
+
+              <!-- Octobre 2025 -->
+              <details class="entry">
+                <summary>
+                  <div class="entry__left">
+                    <span class="entry__date">octobre 2025</span>
+                    <span class="entry__title">Optimisation des performances</span>
+                  </div>
+                  <div class="entry__right">
+                    <span>Voir</span>
+                    <span class="chev">⌄</span>
+                  </div>
+                </summary>
+                <div class="entry__body">
+                  <p>Unreal Engine propose plusieurs outils pour analyser et améliorer les performances.</p>
                   <ul class="entry__bullets">
-                  <li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener">Google Search Central — SEO Starter Guide</a></li>
+                    <li>Profiler intégré.</li>
+                    <li>Optimisation CPU/GPU.</li>
+                    <li>Gestion du LOD.</li>
                   </ul>
                 </div>
-              </div>
-            </details>
-            <details class="entry">
-              <summary>
-                <div class="entry__left">
-                  <span class="entry__date">octobre 2025</span>
-                  <span class="entry__title">Sécurité front minimale : éviter les pièges</span>
-                </div>
-                <div class="entry__right">
-                  <span>Voir</span>
-                  <span class="chev" aria-hidden="true">⌄</span>
-                </div>
-              </summary>
-              <div class="entry__body">
-                <p>Sans faire de cyber, adopter des réflexes : ne pas exposer des infos sensibles et traiter les inputs proprement.</p>
-                <ul class="entry__bullets">
-                  <li>Ne jamais stocker des secrets dans le front (clé API publique).</li>
-                  <li>Valider côté serveur si tu as un backend.</li>
-                  <li>Faire attention au copier/coller de scripts externes.</li>
-                </ul>
-                <div class="sources">
-                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+              </details>
+
+              <!-- Novembre 2025 -->
+              <details class="entry">
+                <summary>
+                  <div class="entry__left">
+                    <span class="entry__date">novembre 2025</span>
+                    <span class="entry__title">Usages hors jeu vidéo</span>
+                  </div>
+                  <div class="entry__right">
+                    <span>Voir</span>
+                    <span class="chev">⌄</span>
+                  </div>
+                </summary>
+                <div class="entry__body">
+                  <p>Unreal Engine est utilisé dans d’autres secteurs que le jeu vidéo.</p>
                   <ul class="entry__bullets">
-                  <li><a href="https://owasp.org/www-project-web-security-testing-guide/" target="_blank" rel="noopener">OWASP — Web Security Testing Guide (overview)</a></li>
+                    <li>Cinéma et séries.</li>
+                    <li>Architecture et visites virtuelles.</li>
+                    <li>Simulation professionnelle.</li>
                   </ul>
                 </div>
-              </div>
-            </details>
-            <details class="entry">
-              <summary>
-                <div class="entry__left">
-                  <span class="entry__date">novembre 2025</span>
-                  <span class="entry__title">Documentation : README + captures + étapes</span>
-                </div>
-                <div class="entry__right">
-                  <span>Voir</span>
-                  <span class="chev" aria-hidden="true">⌄</span>
-                </div>
-              </summary>
-              <div class="entry__body">
-                <p>Pour un projet BTS, la doc compte : expliquer le but, les fonctionnalités, et comment lancer/tester.</p>
-                <ul class="entry__bullets">
-                  <li>README clair : objectif, features, installation.</li>
-                  <li>Ajouter 2–3 captures d’écran.</li>
-                  <li>Lister les technos utilisées (HTML/CSS/JS/Python…).</li>
-                </ul>
-                <div class="sources">
-                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
+              </details>
+
+              <!-- Janvier 2026 -->
+              <details class="entry">
+                <summary>
+                  <div class="entry__left">
+                    <span class="entry__date">janvier 2026</span>
+                    <span class="entry__title">Bilan de la veille Unreal Engine</span>
+                  </div>
+                  <div class="entry__right">
+                    <span>Voir</span>
+                    <span class="chev">⌄</span>
+                  </div>
+                </summary>
+                <div class="entry__body">
+                  <p>Cette veille m’a permis de mieux comprendre les capacités d’Unreal Engine.</p>
                   <ul class="entry__bullets">
-                  <li><a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes" target="_blank" rel="noopener">GitHub Docs — README</a></li>
+                    <li>Moteur puissant et polyvalent.</li>
+                    <li>Technologies innovantes.</li>
+                    <li>Fort potentiel professionnel.</li>
                   </ul>
                 </div>
-              </div>
-            </details>
-            <details class="entry">
-              <summary>
-                <div class="entry__left">
-                  <span class="entry__date">janvier 2026</span>
-                  <span class="entry__title">Bilan : checklist “site propre”</span>
-                </div>
-                <div class="entry__right">
-                  <span>Voir</span>
-                  <span class="chev" aria-hidden="true">⌄</span>
-                </div>
-              </summary>
-              <div class="entry__body">
-                <p>Synthèse de la veille en une checklist rapide, à appliquer avant rendu ou mise en ligne.</p>
-                <ul class="entry__bullets">
-                  <li>Responsive OK (mobile/desktop), menu fonctionnel.</li>
-                  <li>Accessibilité de base : titres, clavier, contraste.</li>
-                  <li>Performance : images optimisées, pas de scripts inutiles.</li>
-                </ul>
-                <div class="sources">
-                  <p class="small muted" style="margin-bottom:6px">Sources :</p>
-                  <ul class="entry__bullets">
-                  <li><a href="https://web.dev/learn/" target="_blank" rel="noopener">web.dev — Learn</a></li>
-                  <li><a href="https://developer.mozilla.org/fr/docs/Learn" target="_blank" rel="noopener">MDN — Learn Web Development</a></li>
-                  </ul>
-                </div>
-              </div>
-            </details>
+              </details>
+
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    
   </main>
-<footer class="footer">
+
+  <footer class="footer">
     <div class="container footer__inner">
       <p class="muted small">© <span id="year"></span> — Portfolio BTS SIO SLAM — Clément OLIVIER</p>
       <p class="muted small">Fait en HTML/CSS/JS (statique) • Thème clair/sombre • Animations légères</p>
