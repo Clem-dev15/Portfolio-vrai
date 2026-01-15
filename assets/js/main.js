@@ -16,7 +16,7 @@ const PROJECTS = [
     kicker: "Jeu / Algorithmique",
     category: "cours",
     desc:
-      "Jeu type Monopoly en Python : gestion des tours, dés, achats, loyers, prison, et une logique orientée objet pour garder un code propre et testable.",
+      "Jeu type Monopoly en Python : gestion des tours de plateau, de la position du pion, des cases chances (avec évènements aléatoires, case prison, achat d'une case, gestion du portefeuille de chaque joueur etc...",
     tags: ["Python", "POO", "Structures", "Console/GUI"],
     links: [
       { label: "Repo GitHub", url: "https://github.com/Matmat42/Monopoly.git" },
